@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleToDo</string>
+    <string name="add">Add Task</string>
+    <string name="date">Date</string>
+    <string name="dueDefault">Due on: </string>
+    <string name="defaultText">Task</string>
+</resources>
