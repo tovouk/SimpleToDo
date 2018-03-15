@@ -36,9 +36,10 @@ public class TaskListAdapter extends RecyclerView.Adapter<TaskListAdapter.TaskVi
         }
         String task = taskCursor.getString(taskCursor.getColumnIndex(ToDoContract.ToDoEntry.COLUMN_TASK_NAME));
         String dueDate = taskCursor.getString(taskCursor.getColumnIndex(ToDoContract.ToDoEntry.COLUMN_DUE_DATE));
+        String dayOfWeek = taskCursor.getString(taskCursor.getColumnIndex(ToDoContract.ToDoEntry.COLUMN_DAY_OF_WEEK));
         long id = taskCursor.getLong(taskCursor.getColumnIndex(ToDoContract.ToDoEntry._ID));
         holder.taskView.setText(task);
-        holder.dateView.setText(dueDate);
+        holder.dateView.setText(dayOfWeek);
         holder.itemView.setTag(id);
     }
 

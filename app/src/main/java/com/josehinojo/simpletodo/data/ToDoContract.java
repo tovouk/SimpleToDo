@@ -9,6 +9,7 @@ public class ToDoContract {
         public static final String TABLE_NAME = "todos";
         public static final String COLUMN_TASK_NAME = "taskName";
         public static final String COLUMN_DUE_DATE = "due";
+        public static final String COLUMN_DAY_OF_WEEK = "Day";
         public static final String COLUMN_TIMESTAMP = "timestamp";
     }
 

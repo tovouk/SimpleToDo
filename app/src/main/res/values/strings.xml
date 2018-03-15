@@ -3,5 +3,7 @@
     <string name="add">Add Task</string>
     <string name="date">Date</string>
     <string name="dueDefault">Due on: </string>
+    <string name="dueFormat">MM/dd/YYYY</string>
     <string name="defaultText">Task</string>
+    <string name="date_picker_title">Choose Date</string>
 </resources>

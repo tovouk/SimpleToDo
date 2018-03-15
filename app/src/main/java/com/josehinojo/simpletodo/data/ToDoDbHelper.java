@@ -7,9 +7,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ToDoDbHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "todos.db";
+    private static final String DATABASE_NAME = "todos.db";
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
     public ToDoDbHelper(Context context){
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
@@ -21,6 +21,7 @@ public class ToDoDbHelper extends SQLiteOpenHelper {
                 " (" + ToDoContract.ToDoEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 ToDoContract.ToDoEntry.COLUMN_TASK_NAME + " TEXT NOT NULL, " +
                 ToDoContract.ToDoEntry.COLUMN_DUE_DATE + " DATE NOT NULL," +
+                ToDoContract.ToDoEntry.COLUMN_DAY_OF_WEEK + " TEXT NOT NULL," +
                 ToDoContract.ToDoEntry.COLUMN_TIMESTAMP + " TIMESTAMP DEFAULT CURRENT_TIMESTAMP" +
                 ");";
         db.execSQL(SQL_CREATE_TODO_TABLE);
